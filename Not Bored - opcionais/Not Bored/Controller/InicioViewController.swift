@@ -23,8 +23,8 @@ class InicioViewController: UIViewController {
     @IBOutlet weak var starButton: UIButton!
     @IBOutlet weak var priceTextField: UITextField!
     
-    var pricePickerView = UIPickerView()
-    var priceRange = ["--", "Free", "Low", "Medium", "High"]
+    private var pricePickerView = UIPickerView()
+    private var priceRange = ["--", "Free", "Low", "Medium", "High"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +87,7 @@ class InicioViewController: UIViewController {
         starButton.isEnabled = false
     }
     
-    func atuliazarTela() {
+    private func atuliazarTela() {
         DispatchQueue.main.async {
             if self.check {
                 self.starButton.isEnabled = true

@@ -12,7 +12,7 @@ class TermsAndConditionsViewController: UIViewController {
     
     var checkTerms: Bool?
     
-    var callback: ((Bool) -> Void)
+    private var callback: ((Bool) -> Void)
 
     @IBOutlet weak var checkButton: UIButton!
     

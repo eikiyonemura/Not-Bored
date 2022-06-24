@@ -9,7 +9,7 @@ import UIKit
 
 class ActivitiesViewController: UIViewController {
 
-    var activitiesArray: [String] = []
+    private var activitiesArray: [String] = []
     var participantsInitial: String = ""
     var priceRange: String?
     
@@ -18,10 +18,6 @@ class ActivitiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //navigationItem.hidesBackButton = true
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "shuffle"), style: .plain, target: self, action: #selector(shuffleButtonTapped(_:)))
-//        navigationItem.rightBarButtonItem?.tintColor = .black
         navigationItem.title = "Activities"
         
         activitiesTableView.dataSource = self
@@ -35,7 +31,7 @@ class ActivitiesViewController: UIViewController {
     
     private func getActivities() {
         for activity in Activities.allCases {
-            activitiesArray.append(activity.name)
+            activitiesArray.append(activity.rawValue)
         }
     }
     

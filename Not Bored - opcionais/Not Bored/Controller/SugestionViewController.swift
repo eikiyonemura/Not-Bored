@@ -13,12 +13,12 @@ class SugestionViewController: UIViewController {
     var titulo: String?
     var participantsInitial: String?
     
-    var urlString: String = "http://www.boredapi.com/api/activity/?"
+    private var urlString: String = "http://www.boredapi.com/api/activity/?"
     
-    var activity: String?
-    var parctcipants: Int?
-    var price: String?
-    var type: String?
+    private var activity: String?
+    private var parctcipants: Int?
+    private var price: String?
+    private var type: String?
 
     var priceRange: String?
     
@@ -40,14 +40,6 @@ class SugestionViewController: UIViewController {
         guard let titulo = titulo else {
             return
         }
-        
-//        guard let participantsInitial = participantsInitial else {
-//            return
-//        }
-//
-//        guard let priceRange = priceRange else {
-//            return
-//        }
         
         if titulo == "Random" {
             getURLString()
@@ -101,7 +93,7 @@ class SugestionViewController: UIViewController {
         }
     }
     
-    func getURLString() {
+    private func getURLString() {
         guard let participantsInitial = participantsInitial else {
             return
         }
