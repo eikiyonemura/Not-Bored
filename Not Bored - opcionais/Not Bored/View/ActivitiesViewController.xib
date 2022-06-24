@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesViewController" customModule="Not_Bored" customModuleProvider="target">
+            <connections>
+                <outlet property="activitiesTableView" destination="epZ-KF-Ozf" id="axI-8p-9QU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-KF-Ozf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="separatorColor" systemColor="labelColor"/>
+                    <color key="sectionIndexColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexBackgroundColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="tintColor" red="0.74554866549999999" green="0.8889201283" blue="0.98825389149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="epZ-KF-Ozf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CJD-bT-xVO"/>
+                <constraint firstAttribute="bottom" secondItem="epZ-KF-Ozf" secondAttribute="bottom" id="byD-lJ-12x"/>
+                <constraint firstItem="epZ-KF-Ozf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lgC-PG-iil"/>
+                <constraint firstItem="epZ-KF-Ozf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vW7-YV-Fse"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="80.357142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
