@@ -32,12 +32,14 @@ class TermsAndConditionsViewController: UIViewController {
         guard let checkTerms = checkTerms else {
             return
         }
+        
+        checkTerms ? checkButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal) : checkButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
 
-        if checkTerms {
-            checkButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
-        } else {
-            checkButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
-        }
+//        if checkTerms {
+//            checkButton.setImage(UIImage(systemName: "checkmark.circle.fill")
+//        } else {
+//            checkButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
+//        }
         
     }
 

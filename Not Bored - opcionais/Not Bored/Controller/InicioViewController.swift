@@ -39,19 +39,18 @@ class InicioViewController: UIViewController {
         let attibuteString = NSMutableAttributedString(string: "Terms and conditions", attributes: yourAttributes)
         termsButton.setAttributedTitle(attibuteString, for: .normal)
         
-        if check {
-            starButton.isEnabled = true
-        } else {
-            starButton.isEnabled = false
-        }
+        starButton.isEnabled = check ? true : false
+        
+//        if check {
+//            starButton.isEnabled = true
+//        } else {
+//            starButton.isEnabled = false
+//        }
         
     }
 
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-//        let activitiesVC = ActivitiesViewController()
-//        activitiesVC.participantsInitial = participantsTextField.text ?? ""
-//        navigationController?.pushViewController(activitiesVC, animated: true)
         
         let tabBar = TabBarController()
         tabBar.modalPresentationStyle = .overFullScreen
@@ -89,11 +88,14 @@ class InicioViewController: UIViewController {
     
     private func atuliazarTela() {
         DispatchQueue.main.async {
-            if self.check {
-                self.starButton.isEnabled = true
-            } else {
-                self.starButton.isEnabled = false
-            }
+            
+            self.starButton.isEnabled = self.check ? true : false
+            
+//            if self.check {
+//                self.starButton.isEnabled = true
+//            } else {
+//                self.starButton.isEnabled = false
+//            }
         }
     }
     
